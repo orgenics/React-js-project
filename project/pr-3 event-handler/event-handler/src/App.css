@@ -1,0 +1,60 @@
+/* Calculator background */
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: 300px;
+  color: white;
+}
+
+.display {
+  font-size: 48px;
+  text-align: right;
+  padding: 20px;
+  word-wrap: break-word;
+  min-height: 70px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Colors */
+.light-gray {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.dark-gray {
+  background-color: #333333;
+}
+
+.orange {
+  background-color: #ff9500;
+}
+
+/* Special styling for 0 button */
+.zero {
+  grid-column: span 2;
+  border-radius: 35px;
+  text-align: left;
+  padding-left: 25px;
+}
