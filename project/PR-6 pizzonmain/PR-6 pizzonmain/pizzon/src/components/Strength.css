@@ -1,0 +1,72 @@
+.strength-part {
+    width: 100%;
+    background-color: #fffbea;
+    padding: 60px 0;
+    position: relative;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.section-heading {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.section-heading h5 {
+    color: #e53935;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+.strength-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* responsive ke liye */
+    margin-top: 50px;
+}
+
+.strength-box {
+    flex: 1;
+    min-width: 220px;
+
+    padding: 20px;
+}
+
+.strength-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.strength-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.strength-content p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.strength-vacter img {
+    position: absolute;
+    height: 200px;
+    top: 10%;
+    right: 0%;
+}

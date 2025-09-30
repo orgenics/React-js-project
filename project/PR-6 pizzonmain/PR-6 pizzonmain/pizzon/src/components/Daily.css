@@ -1,0 +1,82 @@
+.pizza-section {
+    background: #fff;
+}
+
+/* Pizza image responsive alignment */
+.pizza-img {
+    margin-left: -110px;
+    padding-left: 0;
+    /* no padding */
+}
+
+.pizza-image {
+    max-width: 350px;
+    margin-left: -125px;
+    /* default shift for medium+ screens */
+}
+
+.pizza-text {
+    margin-left: -60px;
+    width: 40%;
+    /* no padding */
+}
+
+/* Garlic image */
+.garlic-img {
+    margin-left: 100px;
+    max-width: 150px;
+    margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .pizza-image {
+        margin-left: -50px;
+        /* thoda kam chipkana */
+        max-width: 300px;
+    }
+
+    .pizza-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .garlic-img {
+        margin-top: 20px;
+        max-width: 120px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+    .pizza-img {
+        text-align: center;
+        /* center align */
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .pizza-text,
+    .garlic-img {
+        text-align: center;
+        /* sab center me */
+    }
+
+    .pizza-image {
+        margin-left: 0;
+        /* mobile pe normal */
+        max-width: 250px;
+    }
+
+    .pizza-text {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .garlic-img {
+        margin-top: 20px;
+        max-width: 100px;
+    }
+
+}
