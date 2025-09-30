@@ -1,0 +1,73 @@
+.subtitle {
+    font-size: 16px;
+}
+
+.main-section {
+    overflow: hidden;
+}
+
+.red-line {
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: red;
+}
+
+.menu-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.custom-btn:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.text-center {
+    text-align: start !important;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #f59e0b !important;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.menu-image {
+    transition: transform 0.5s ease-in-out;
+    /* यह smooth animation के लिए है */
+}
+
+.menu-card:hover .menu-image {
+    transform: rotate(45deg);
+    /* यह 360 डिग्री घुमाने के लिए है */
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    /* यह पीला रंग है */
+    height: 50px;
+    color: #ffff;
+    border-color: #ffc107;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    /* smooth transition के लिए */
+}
+
+.btn-warning:hover {
+    background-color: #dc3545;
+    /* यह लाल रंग है */
+    color: #ffff;
+    border-color: #dc3545;
+}
