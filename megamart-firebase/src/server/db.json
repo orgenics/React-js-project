@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": "65",
+      "pname": "Slim Jeans",
+      "desc": "Stylish slim fit jeans",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTHNOOQUwMnTNcTM4V408bLzR9OxJdP8iR4g&s",
+      "price": "2490",
+      "brand": "Reebok",
+      "category": "Jeans",
+      "pattern": [
+        "Checkered",
+        "Striped"
+      ]
+    },
+    {
+      "id": "75",
+      "pname": "Blazer Pro",
+      "desc": "Formal office blazer",
+      "img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAngMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIEBQYHAwj/xAA9EAABAwIEAgcGAwYHAQAAAAABAAIDBBEFEiExBkETIlFhcYGhBzJCkbHBFFLwI2KCktHhFTNTcqKy4iX/xAAZAQADAQEBAAAAAAAAAAAAAAAAAwQCAQX/xAAfEQACAgMBAQEBAQAAAAAAAAAAAQIRAyExMhJBBCL/2gAMAwEAAhEDEQA/AOppShCABCVCAESoQgAUPFMWoMKp3T4jUxwxjWxPWd3Abk9wUzuK4Nx7js+LcQzTNiljhgeYGMcfyki58T6WXGdSs6HW+03Badt4Yaua53MeQD5rzofaZhs07GVlNLSwSbT3zgeIAvbvXE5JnPJ6JkhLm9a40JvyCdFPNHC6Ml46126bdqz9G/g+oYZY542ywSNkjcLtcx2YHzCcvnzg/jGo4exFr7PfSym1RDfQgnVwH5h6rveH11NidFDW0Molp5m5mPAIuPA6jwK0jDRISJUi6cEQhCAEKEFIgAQhIgD1SoQgAQhCABCEIAiYvVmhwurq2NLnQQueA3e4C4RgeEz8Q4j01Vm/DZy+V5Osjr3XfqqnZVUstNLrHKxzHeBFlyfBQzA6OaCozZoqp8LWtBJJabaBJzNpaH4EnLZoaPhrDqaHLHTRAEa3F1DrcIoY43NFOw+AXpScTUlRO2lFPVNe6wBkjyj1VZxRj1RDWGkoqaMuaOs59zbyG6m+ZPVlilFbMxxFhNOyFz4owHt1BC23sWrXSYTXUbzpDKHsaTsHD+xWNjq5axxE00cl9wIi0Dwurn2XVbsL4gmpJIsza9/QtdfVhYHOGioxyrTJssfraOwFNsnJE8lESJSEIAQppTkhQAiRKkQB6pUIQAISoQAiEqEACwWMYXnxTEYxI5nTy9I143BcNbeS3qoOJaV7XCqYLt+M9h5JWZf5H/ztKWzJ03DdNQudVAB8lwb2J7uai4hEI8fDn2vKwA9byV7VVkLaF/4h+VpGW5Nt1lK80DamKoiiqC5mmbKSLclKney5RJlbSUtLE/oo2tcee68OEqWWbjSilpxoy75B3WOv67V54jUOeGE3AeAdRbRbf2diF2FTFrWdM2Wzn26xG4F0zErYnNKlo1SRKhVkAh2SJTskQAiQ7JUhQAhSIKRAHulSJUACEIQAIQhAAvKrgbVU0sDjYSNtfsPI/NeqWx7Ed0F1s57K0NqZaWcMzMdbrbeS8KygpGRZ3yudbWzn6BWGLRUeK19bHE8F0cli5uha6w2WcquHs0D5XVs12bsc7koKpnpxm/kqcTq43TOEbszW81rfZfXA1VXSPdZ0rGyMB+IjcDyssaMLIlLTtvvyVDjuIyUlXE2imfFLAc4kjdlcHdx8EzH60Iy+dn0n4IWT4X4xp62lgpsWmEVdlAzu0bJpob7Alay4sDfQ7HtVSknwkaaEOyROOyYV04BTTsnJp2QAhSIKRAEhKhCABCEIAXkjyPyVPxFjL8KijbA1rp5TYZtmjttzWRr8cxKtbkkmLI/yxDLdKnmjHQ2GKUjZ4lj2H4eSySYSTf6Uep8+Q81ksV4prK2N0VM0UsLxl09+3jy8lSFg8O9PYwusX+60dXRSzzSloojhUTIux6bBeLKqoi1iDgyVh0D2gD1H3K39FiGG8QU/T0Uwlb8bQes09hXJ+KopH41VN+HOCbc9AvXhOaSkxymEMxiEjg1/Y7sBVLhcUxUZtSo2/FWJ0uDwyMBY6slb+zhabuA/MR2LmWWSpqGZzcyyNF+8m33VrxzRy0vFVTDPVCo6UicFpPUDtmkciLfKyj4BTPqMbog+5ayQyH+EEj1AWoxUYtmJycpG0LAyYtANgMoHcrPCMQrIqc/gKyWIRuLXNY/qk+GyiSQxzgtkbcHcXXvSSNu+OMBvRENIbte1/pb5qK30r+UaWh4vrWXFZBHOO1pyOH2V3R8U4ZUACSR9O8m2WRn3Cw0jQRcbrxebNvf3dd1uOacTEsMWdXZKyVgfE9sjDs5hBCCsN7Oa57quuo3ONnNErB+WxsfqPktydlZCX0rJJR+XQhSIJSXWjJKQhCAFQhA37kAY7jh2Spp3A3ytBt3ZtfRUJA57qx4sqDUYlMBqyPqfIf1VS12aNttyF52Tcmy/HqKAjMRpoCvQt0SsZlbc7p1tVgYc44j0xuqF+Y+gVRIPibo4agq24mGXiKqH7jSqiU9R3gvTx+EedP0xJJpq6plraqR0k0p1c7ewFh9FoODoc+IVEuv7KHL/ADH/AMqgjFmadi1/CEOShqZiNZJA0HwH91nLqDNYlci5kcIYnPcdGhOwyIwU936ySOL3+J/VkxzeknjiOrffd5bev0Kl31uoPwtHE2aQok/uOFzrZezn69yiSuzt80ICZwpWHD+JKVzrCOW8T/B397LqZ00XFHPMU0czSc0ZzDx/QXZaaZtRSwztNxIxrgfEKvC9NEmZcZ6Ept0FNTxJOQhCAFSPc1jHOd7rRcpVCxupFJhFXKbf5ZGvfp91yTpHYq2c0rp6irq5JS/I2RxdkHK5unUYBYMx9268DZwzWyxAc9ylwuZswkyA2a7Q9y81norhY3ugDUc0bIDrEXNlg6c943p+gx5kg2mh/wCpt91QS8x3LccfUnTUEVYwHNTvuf8AadD9j5LCu11XpYZXBEOZVNjofcBvy58l0PBqU02E0sbhldlzvHedfRYTDKY1dRTU4Gsjw0+F9fS632NTFrWU0eklS/I391vxH5Jf9D4jeBdY6kPSdJNbqyHqH90afW5Xq52iAwRRtjYOo3Ro7F5P03UhQeUs2TMXbkXAXhTv6SlDu0k+qKtzY4ZJNrNKjYBJ0uFQPPMErdaOWe7xdveuk8E1P4jhunBPWhLoj5G4/wCJC5zKN1sfZzNemrqbse2QDxFj9Am4XUhWVWjYOKbdDt00lVkpYoQhAAsvxxUANp6cnTWRwB8hdahcy4sr/wAdi9QWdeBpyNaPjDdP5b3Sc7qNDcMbZUVcvTsJe4spgdT8Up7B3Lyw+pLK+NhaAJbts3QAck2Vskjs8zr25DQDwVVPUvbiVC2EXcZrADnp+vkpFG1orbNqXC115SOtuohqPhzWJ2umPqJodXtLmdo5LFGkPrGtq6SSF4uCLEEbhcvnhfT1EsD73jdbX09F08OZKBJC6/gslxdQZXtrWA3PVlt6FUYJU6E54WrF4FphLXS1JGkLLC/5j+irqicMRxWeuJvDD+xh7D+Y/rsVThznYfwzFFGctViLibjdrNgf5R6q2ifDQ0kUAs0NaNAjLJuVhiVRonvkvso0kmYm3JRTPJMbRg27VIbC5kV39UDtSUhjKzHJrUczWHXIfon8Pi2FQDllVRxFWZYZOj3ItdXOAj/5kGlrtTGv8GV6Jko6pI5K94Dn6PGXwg6TQkfLVUrwf4eakcOSfh8fo3A2Bky+RBRB0zk1aOouOq8yU8rzKuIi0SpEqAK/H67/AA/CaicWzZcrb9p0XK5KiKIutTTSOBuXO5+S3fHpDqWkicCWukc4+Qt91j2NaBZrQANAANlHnlcqK8MaVlLWS/i4nOnqZ4GW0YGZW/PmpnszwmLFeKm1DD0lPhoEpcebnAhg9HH+FelXQMqGFrwDcW1CvvZ+/DOF8MrIJ3ytqKmYvLhEXNDQLNAtrpry+JcxSj+ncl1oj1jaaeqnEbWlgkc1oPYCojoZIjaB12/6b/snCSF0j4s4Di4lp2dr3KXBTyutqS3tKT1jlwqXRsMuZmanm+v9U19LJVRyQzQXaWnO9o6pH2VhWTUcDss0jbg7nZVeK406an6On6V1KPeMcRy/MBbjE1WtlE0uqsWIp2gxwtEUQvcABX1PhcbOvMekkOpJULhmOlDJpIGuGZ1wXK5kOUb3XJ9FojzTw0bCGtu/saFUVTqyqGZw6KHvVs4NAc6wv2lQq79qOs+0YGoQgZmMUEbIHgEOI5rXR4b/AIVBSQb9JTRTa8szQSPndZTFmtfSy9G3TKbd66Rx8W0dLhdVEy7nwNiygbkNBH1TquAq6mUrwWi+7SvOFwirIJQdGStd8iEkE1W6MPfA0tO7bFpHz3TZQHRuLA5pA1DhslLTGPaOtOKYSmxOzwxv/M0H0QSr1whfS3SoQunCh4ziY/B+kcOtHI3KfHRYYC23aUIUf9Horw8H7lo7iVDxSd9JhdXUw26SOLMCRfVCEmPR34w9n9HDLgbsRlb0lXUTSCSR+p6psFp26CwCEJ2T0dxeUQqyUMBvFE7szNvZUeN4lUCie0Fti3ayELiNSKbhuZ+RzdLXV84IQsS6LR4y6NdZVNQ4yS5SdM3JCFxAyFi7Gtb0YFmhi6VxFTx1fDGBSTC7mGFw8TESfoEqE+HliZ+kZ97LtFnOb4FQqxlmEZnW8UiFOh74dMpCTRUx7YGH0CeShC9FcPPZ/9k=",
+      "price": "3999",
+      "brand": "Adidas",
+      "category": "Blazers",
+      "pattern": [
+        "Striped"
+      ]
+    },
+    {
+      "id": "81",
+      "pname": "Leather Jacket",
+      "desc": "Black leather jacket",
+      "img": "https://reebok.com.au/cdn/shop/files/16-559489.jpg?v=1753069681&width=360",
+      "price": "4999",
+      "brand": "Reebok",
+      "category": "Jackets",
+      "pattern": [
+        "Striped"
+      ]
+    },
+    {
+      "id": "8",
+      "pname": "Classic Black Blazer",
+      "desc": "Comfortable cargo pants for everyday wear.",
+      "img": "https://i.pravatar.cc/30?img=1",
+      "price": "20008",
+      "brand": "Nike",
+      "category": "Hoodies",
+      "pattern": [
+        "Checkered",
+        "Striped"
+      ]
+    }
+  ]
+}

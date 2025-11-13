@@ -1,0 +1,222 @@
+ .sort-select {
+  width: 200px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #777;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.clear {
+  text-decoration: none;
+  border: 1px solid #777777c6;
+  padding: 2px 8px;
+  border-radius: 5px;
+  background-color: white;
+  color: #777;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.dropdown-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+.dropdown-body {
+  border-top: 1px solid #eee;
+  margin-top: 5px;
+  padding-top: 8px;
+}
+
+.dropdown-body div {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 6px 0;
+}
+.card-custom {
+  width: 18rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-custom img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.card-body-custom {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-body-custom h5 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0;
+  color: #333;
+}
+
+.card-body-custom p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.card-body-custom .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-body-custom .pattern {
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+}
+
+.card-body-custom .btn-group {
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.sort-select {
+  width: 220px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #777;
+  padding: 5px 10px;
+  outline: none;
+}
+
+
+
+/* Filters - dropdown dark style */
+.filter-card{
+  background: #f2f1f1; /* deep dark bg */
+  border-radius: 8px;
+  padding: 18px;
+  color: #0c0c0c;
+  
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.filter-header{
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  margin-bottom: 12px;
+}
+
+.filter-title{
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.clear-btn{
+  /* background: transparent; */
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #bfc9d9;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.clear-btn:hover{ background: rgba(255,255,255,0.02); }
+
+/* Dropdown header */
+.dropdown{ margin-top: 14px; }
+.dropdown-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 10px 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.02);
+}
+.dropdown-header h5{
+  font-size: 13px;
+  color: #000000;
+  margin: 0;
+  font-weight: 600;
+}
+.dropdown-header .chev{
+  font-size: 18px;
+  color: #9aa6bb;
+}
+
+/* Body look */
+.dropdown-body{
+  margin-top: 8px;
+  /* background: #071023; */
+  border-radius: 6px;
+  padding: 10px;
+  color: black;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* Each row like your image with right arrow */
+.filter-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 10px 8px;
+  border-radius: 6px;
+  transition: background .12s ease, transform .06s ease;
+}
+.filter-row + .filter-row { margin-top: 6px; }
+
+.filter-row:hover{
+  background: rgba(255,255,255,0.02);
+  transform: translateY(-1px);
+}
+
+.filter-row .left{ display:flex; align-items:center; gap:10px; }
+.filter-row input[type="checkbox"]{ width:16px; height:16px; accent-color:#4caf50; }
+.label-text{ font-size:13px; color: #000000; }
+
+/* right side small count and arrow */
+.filter-row .right{ display:flex; align-items:center; gap:10px; color:#98a6bf; }
+.count{ font-size:12px; opacity:0.9; min-width:24px; text-align:right; }
+.item-arrow{
+  font-size:18px;
+  color:#98a6bf;
+  transform: translateY(1px);
+}
+
+/* small responsive tweaks */
+@media (max-width: 768px){
+  .filter-card{ padding: 14px; }
+  .filter-row{ padding: 8px 6px; }
+}
+
+
+
+
+
