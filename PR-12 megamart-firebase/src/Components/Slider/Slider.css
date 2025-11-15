@@ -1,0 +1,21 @@
+.home-slider {
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; 
+}
+
+

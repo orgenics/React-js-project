@@ -1,0 +1,53 @@
+.top-categores h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.top-categores ul li {
+    cursor: pointer;
+    color: #777777;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+.top-brands h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.top-brands ul li {
+    cursor: pointer;
+    color: #777777;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+.top-useful-link h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.top-useful-link ul li {
+    cursor: pointer;
+    color: #777777;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+.contect-us h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.icons span{
+    color: #777777;
+}
+.download h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
