@@ -1,0 +1,5 @@
+{
+  "name": "React Hotel Management System",
+  "description": "A comprehensive hotel management system built with React, TypeScript, and Tailwind CSS, featuring room browsing, reservations, and user authentication, all powered by a mock Firebase service.",
+  "requestFramePermissions": []
+}
