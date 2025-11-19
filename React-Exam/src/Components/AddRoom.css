@@ -1,0 +1,261 @@
+/* AddRoom UI — styles to match the dark header (paste in App.css or AddRoom.css) */
+
+/* reuse existing variables from header :root */
+/* if you keep them in Header.css, ensure this file loads after or they are defined globally */
+:root {
+    /* fallback values if not present */
+    --bg: #0f1720;
+    --muted: #dfe7ef;
+    --accent: #ffd86b;
+    --muted-2: #9aa6b2;
+    --card-bg: #0b1220;
+}
+
+/* Card container */
+.add-product-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 216, 107, 0.06);
+    box-shadow: 0 18px 40px rgba(2, 6, 12, 0.6);
+    padding: 2rem;
+    border-radius: 14px;
+    color: var(--muted);
+    backdrop-filter: blur(2px);
+}
+
+/* Heading */
+.add-product-card h3 {
+    color: var(--accent) !important;
+    /* make heading gold to match header */
+    letter-spacing: 1px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Form label style */
+.add-product-card .form-label,
+.add-product-card label {
+    color: var(--muted) !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Inputs (control & textarea) */
+.add-product-card .form-control,
+.add-product-card textarea.form-control,
+.add-product-card .form-select {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: var(--muted);
+    padding: 0.6rem 0.75rem;
+    border-radius: 10px;
+    transition: box-shadow .12s ease, transform .12s ease, border-color .12s ease;
+    box-shadow: none;
+}
+
+/* Focus state */
+.add-product-card .form-control:focus,
+.add-product-card .form-select:focus {
+    outline: none;
+    border-color: rgba(255, 216, 107, 0.95);
+    box-shadow: 0 10px 30px rgba(183, 155, 92, 0.06);
+    transform: translateY(-2px);
+}
+
+/* File input — make smaller & styled */
+.add-product-card input[type="file"] {
+    background: transparent;
+    color: var(--muted);
+    padding: 0;
+    border: none;
+}
+
+/* Show a subtle fake file area using adjacent sibling (works if bootstrap shows filename) */
+/* If you want a custom file area, you'd need a small JSX tweak; this keeps it CSS-only */
+
+/* Error text */
+.add-product-card .text-danger,
+.add-product-card small.text-danger {
+    color: #ff7b7b !important;
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+}
+
+/* Submit button — primary look to match header accent */
+.add-product-card .btn-primary {
+    background: linear-gradient(180deg, var(--accent), rgba(183, 155, 92, 0.92));
+    border: 1px solid rgba(183, 155, 92, 0.18);
+    color: #111;
+    font-weight: 700;
+    padding: 0.6rem 1.75rem;
+    border-radius: 999px;
+    box-shadow: 0 12px 30px rgba(183, 155, 92, 0.08);
+    transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+
+/* Button hover/active */
+.add-product-card .btn-primary:hover,
+.add-product-card .btn-primary:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 22px 44px rgba(183, 155, 92, 0.12);
+    opacity: 0.98;
+}
+
+/* Disabled/Loading state hint (if using loading from state) */
+.add-product-card .btn-primary[disabled],
+.add-product-card .btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+
+
+
+/* Center small helper text */
+.add-product-card .form-text {
+    color: var(--muted-2);
+    font-size: 0.85rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+    .add-product-card {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+}
+
+/* Optional: card outer container alignment (if you want slightly lifted look) */
+.add-product-card {
+    transform: translateY(0);
+    transition: transform .14s ease, box-shadow .14s ease;
+}
+
+.add-product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 60px rgba(2, 6, 12, 0.6);
+}
+
+/* Make small form-control icons/text align with dark theme (bootstrap may add bg-white) */
+.add-product-card .form-control::placeholder {
+    color: rgba(219, 219, 219, 0.35);
+}
+
+/* If you use ToastContainer, make toast text legible on dark background */
+.toastify__toast--success,
+.Toastify__toast--success {
+    color: #111 !important;
+}
+
+/* === ADD ROOM — PREMIUM GOLD/WHITE UI === */
+
+/* Wrapper Card */
+.add-product-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+    transition: 0.25s ease;
+    margin-top: 10px;
+}
+
+.add-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.18);
+}
+
+/* Heading */
+.add-product-card h3 {
+    color: #b79b5c !important;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* LABELS — BLACK (requested) */
+.add-product-card label,
+.add-product-card .form-label {
+    color: #000 !important;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+/* Form Controls */
+.add-product-card .form-control,
+.add-product-card .form-select {
+    background: #f7f7f7 !important;
+    border: 1.5px solid #e1e1e1;
+    padding: 0.75rem 0.9rem;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    color: #222;
+}
+
+/* Hover */
+.add-product-card .form-control:hover,
+.add-product-card .form-select:hover {
+    border-color: #c5c5c5;
+}
+
+/* Focus */
+.add-product-card .form-control:focus,
+.add-product-card .form-select:focus {
+    border-color: #b79b5c !important;
+    box-shadow: 0 0 0 3px rgba(183, 155, 92, 0.23);
+    background: #fff;
+}
+
+/* Placeholder */
+.add-product-card .form-control::placeholder {
+    color: #9c9c9c;
+}
+
+/* File input */
+.add-product-card input[type="file"] {
+    background: #fff !important;
+    border: 1.5px solid #e1e1e1 !important;
+    padding: 0.75rem 0.9rem;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    color: #222;
+}
+
+
+/* Error text */
+.add-product-card small.text-danger {
+    color: #ff4c4c !important;
+    font-weight: 600;
+}
+
+/* Submit Button — Premium Gold */
+.add-product-card .btn-primary {
+    background: linear-gradient(90deg, #b79b5c, #dabe72);
+    border: none !important;
+    padding: 0.75rem 2.5rem;
+    border-radius: 30px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #111 !important;
+    box-shadow: 0 8px 25px rgba(183, 155, 92, 0.35);
+    transition: 0.25s ease;
+}
+
+/* Button hover */
+.add-product-card .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(183, 155, 92, 0.5);
+    opacity: 0.95;
+}
+
+
+/* Responsive card */
+@media (max-width: 768px) {
+    .add-product-card {
+        padding: 1.5rem;
+    }
+}

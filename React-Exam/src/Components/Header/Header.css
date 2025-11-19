@@ -1,0 +1,225 @@
+/* 
+.navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar-brand {
+    color: #b79b5c !important;
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-brand:hover {
+    color: #a58f63 !important; 
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #a58f63;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #b79b5c;
+    text-decoration: none;
+  }
+  
+  .navbar-nav .nav-dropdown .dropdown-menu {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-nav .nav-dropdown .dropdown-item {
+    color: #a58f63;
+    font-weight: 500;
+  }
+  
+  .navbar-nav .nav-dropdown .dropdown-item:hover {
+    background-color: #b79b5c;
+    color: white;
+  }
+  
+  .navbar-nav .nav-dropdown .dropdown-toggle {
+    color: #a58f63 !important;
+    font-weight: 500;
+  }
+  
+  .navbar-nav .nav-dropdown .dropdown-toggle:hover {
+    color: #b79b5c !important;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  button {
+    background-color: #b79b5c;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #9b7e49; 
+    cursor: pointer;
+  }
+  
+
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .navbar-nav {
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .navbar-brand {
+      font-size: 1.4rem;
+    }
+  
+    .button-container {
+      flex-direction: column;
+    }
+  }
+   */
+
+/* Minimal Dark Header */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+#root { 
+  padding: 0px !important;
+}
+
+:root {
+  --bg: #0f1720;
+  --muted: #dfe7ef;
+  --accent: #ffd86b;
+  --muted-2: #9aa6b2;
+
+}
+
+.navbar {
+  background: var(--bg) !important;
+  padding: 0.5rem 1rem !important;
+  /* border-radius: 6px; */
+  box-shadow: 0 6px 20px rgba(2, 6, 12, 0.6);
+  align-items: center;
+  font-family: 'Inter', system-ui, -apple-system;
+}
+
+.navbar-brand {
+  color: var(--accent) !important;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.navbar-brand img {
+  height: 38px;
+}
+
+.nav.mx-auto {
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--muted-2) !important;
+  padding: .45rem .6rem;
+  border-radius: 6px;
+  transition: all .12s ease;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.nav-link:hover {
+  color: var(--muted) !important;
+  background: rgba(255, 216, 107, 0.06);
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  display: none;
+}
+
+/* Booking badge */
+.nav .badge {
+  position: absolute;
+  top: -7px;
+  right: -10px;
+  background: var(--accent) !important;
+  color: #111 !important;
+  font-size: 0.68rem;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+/* Right side */
+#user-dropdown {
+  color: var(--muted) !important;
+  background: transparent;
+  border: none;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  padding: .3rem 0;
+  min-width: 190px;
+  background: #0b1220;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.dropdown-item {
+  color: var(--muted) !important;
+  padding: .55rem 1rem;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 216, 107, 0.06);
+  color: var(--accent);
+}
+
+/* Add Room button look */
+.nav a[href$="/add"] {
+  border-radius: 10px;
+  padding: .45rem .7rem;
+  border: 1px solid rgba(255, 216, 107, 0.12);
+  background: linear-gradient(180deg, rgba(255, 216, 107, 0.06), rgba(255, 216, 107, 0.02));
+  color: var(--accent) !important;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width:991px) {
+  .navbar {
+    padding: .5rem .6rem !important;
+  }
+
+  .navbar-brand img {
+    height: 34px;
+  }
+}

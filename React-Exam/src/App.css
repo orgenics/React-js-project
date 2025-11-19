@@ -1,0 +1,276 @@
+:root{
+  /* Palette */
+  --bg-cream: #fffdf7;
+  --bg-off: #fffef9;
+  --muted-bg: #f4ede1;
+  --accent: #b89d5b;
+  --accent-dark: #a88a49;
+  --border: #e0d4b7;
+  --soft-border: #d4c296;
+  --text-dark: #3d3d3d;
+  --text-warm: #5c4b27;
+  --success: #2e7d32;
+
+  /* System */
+  --radius-lg: 1rem;
+  --radius-md: .5rem;
+  --radius-xl: 1.375rem;
+  --card-radius: 22px;
+  --shadow-1: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-2: 0 12px 28px rgba(0,0,0,0.12);
+  --transition-fast: 0.2s ease;
+  --container-max: 1320px;
+
+  /* typography */
+  --ff-heading: Georgia, 'Times New Roman', serif;
+  --ff-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --sz-base: 1rem;
+}
+
+/* Page container */
+#root {
+  max-width: var(--container-max);
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: var(--ff-base);
+  color: var(--text-dark);
+}
+
+/* Shared card / panel style for add/edit/view/room etc */
+.card {
+  background: var(--bg-cream);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  padding: 1.5rem;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+/* Elevated variant (used for premium cards) */
+.card--elevated {
+  border-radius: var(--card-radius) !important;
+  box-shadow: var(--shadow-2) !important;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-2);
+}
+
+/* Headings used across add/edit/booking */
+.card h2, .card h3 {
+  color: var(--accent);
+  font-family: var(--ff-heading);
+  letter-spacing: 1px;
+  margin: 0 0 1rem 0;
+}
+
+/* Form inputs (reused everywhere) */
+.form-label {
+  display: block;
+  font-size: var(--sz-base);
+  color: var(--text-warm);
+  font-weight: 600;
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+.form-control, .form-select, .booking-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: var(--sz-base);
+  background-color: var(--bg-off);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--soft-border);
+  padding: .75rem;
+  color: var(--text-dark);
+  outline: none;
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.form-control:focus, .form-select:focus, .booking-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(184,157,91,0.16);
+}
+
+/* Danger text (validation) */
+small.text-danger {
+  margin-top: .35rem;
+  display: block;
+  color: #c23b3b;
+  font-size: .875rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: .6rem 1rem;
+  border-radius: .75rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn--primary {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background-color: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: .5rem 1.25rem;
+  border-radius: 50px;
+}
+
+.btn--outline:hover {
+  background-color: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Hotel / Room card specifics (merged premium styling) */
+.hotel-card {
+  background: #ffffff;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  text-align: left;
+  border: 1px solid #f0ece2;
+}
+
+.hotel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-2);
+}
+
+/* Image / media */
+.img-container {
+  overflow: hidden;
+  height: 240px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+.room-img, .product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease-in-out;
+  display: block;
+}
+.hotel-card:hover .room-img { transform: scale(1.08); }
+
+/* Room text / meta */
+.room-meta {
+  padding: 1rem;
+  background: #fff;
+}
+.room-number {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #6b4f1d;
+  font-family: var(--ff-heading);
+  letter-spacing: 0.4px;
+  margin: 0 0 .35rem 0;
+}
+.room-price {
+  color: var(--success);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: .35rem;
+}
+
+/* Small helper for image wrapper used in older files */
+.room-img-wrap {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Card CTA area - consistent buttons radius & padding */
+.card-actions {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+/* Booking area */
+.booking-section {
+  background-color: var(--muted-bg);
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+}
+.booking-title {
+  font-family: var(--ff-heading);
+  color: #6c4e2a;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: .75rem;
+}
+.booking-label {
+  font-weight: 600;
+  color: #5a4634;
+  font-size: .95rem;
+}
+
+/* Payment radio/custom inputs */
+.custom-radio .form-check-input {
+  accent-color: var(--accent);
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+/* Back/home small button */
+.back-home-btn {
+  background-color: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: all .25s ease-in-out;
+}
+.back-home-btn:hover {
+  background-color: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.mb-1 { margin-bottom: .5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.p-1 { padding: .5rem; }
+.p-2 { padding: 1rem; }
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+  :root { --container-max: 980px; }
+  .img-container { height: 200px; }
+}
+@media (max-width: 720px) {
+  #root { padding: .75rem; }
+  .img-container { height: 160px; }
+  .room-number { font-size: 1.05rem; }
+  .room-price { font-size: 1.35rem; }
+  .card { padding: 1rem; }
+  .card-actions { justify-content: center; }
+}
+
+/* Small accessibility improvements */
+input, select, button { font-family: var(--ff-base); }
+
